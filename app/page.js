@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
     <main className="flex flex-col items-center justify-between min-h-screen p-4 sm:p-24">
-      <div className="z-10 items-center justify-between w-full max-w-5xl font-mono text-sm ">
+      <div className="z-10 items-center justify-between w-full font-mono text-sm max-w-5x ">
         <h1 className="p-4 text-4xl text-center">Expense Tracker</h1>
         <div className="p-4 rounded-lg bg-slate-800">
           <form className="grid items-center grid-cols-6 text-black">
@@ -37,11 +37,11 @@ export default function Home() {
           <ul>
             {items.map((item, id) => (
               <li key={id} className="flex justify-between w-full my-4">
-                <div>
-                  <span>{item.name}</span>
+                <div className="flex justify-between w-full p-4">
+                  <span className="capitalize">{item.name}</span>
                   <span>%{item.price}</span>
                 </div>
-                <button>X</button>
+                <button className="p-4 ml-8 border-l-2 border-slate-900 hover:">X</button>
               </li>
             ))}
           </ul>

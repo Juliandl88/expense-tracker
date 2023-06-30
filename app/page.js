@@ -40,6 +40,7 @@ export default function Home() {
                 <div className="flex justify-between w-full p-4">
                   <span className="capitalize">{item.name}</span>
                   <span>%{item.price}</span>
+                  <span>%{item.price}</span>
                 </div>
                 <button className="w-16 p-4 ml-8 border-l-2 border-slate-900 hover:bg-slate-900">X</button>
               </li>

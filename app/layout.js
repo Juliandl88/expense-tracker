@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Expense Tracker',
-  description: 'App - Expense Tracker - ',
+  description: 'Aplicación de gastos - Expense Tracker  ',
 }
 
 export default function RootLayout({ children }) {
